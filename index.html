@@ -7,14 +7,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
-    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <script src="assets/js/maps.js"></script>
   </head>
   <body>
-    <h3>My Google Maps</h3>
+    <h3 class="general-text uppercase">My Google Maps</h3>
     <!--The div element for the map -->
-    <div id="map"></div>
-
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6">
+				<div id="map" class="image-box"></div>
+			</div>
+            <div class="col-md-6">
+				<div class="image-box bushysunset">
+                <p class="general-text">Hampton Pond, Bushy Park</p>
+                </div>
+			</div>
+		</div>
+	</div>
     <!--Load the API from the specified URL
     * The async attribute allows the browser to render the page while the API loads
     * The callback parameter executes the initMap() function
