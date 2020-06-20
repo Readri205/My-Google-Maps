@@ -7,3 +7,4 @@
 ##### V1.1 Added link to website at top of README
 ##### V1.2 Updated center of universe to Bushy Park
 ##### V1.3 Added JS file, Bushy Park image and styled boxes
+##### V1.4 Added EmailJS API and Form Box

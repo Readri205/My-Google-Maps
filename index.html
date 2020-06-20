@@ -8,20 +8,45 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+	<script type="text/javascript">
+		(function(){
+	      emailjs.init("user_hdnXX8G7GshN7scwXaHR9");
+	   })();
+	</script>
     <script src="assets/js/maps.js"></script>
   </head>
   <body>
-    <h3 class="general-text uppercase">My Google Maps</h3>
+    <h3 class="header-text uppercase">My Google Maps</h3>
     <!--The div element for the map -->
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-6">
-				<div id="map" class="image-box"></div>
+				<div id="map" class="image-box">
+                    <p class="general-text">Bushy Park, London</p>
+                </div>
 			</div>
             <div class="col-md-6">
 				<div class="image-box bushysunset">
-                <p class="general-text">Hampton Pond, Bushy Park</p>
+                    <p class="general-text">Hampton Pond, Bushy Park</p>
                 </div>
+			</div>
+             <div class="col-md-12">
+				<div class="image-box">
+					<p class="general-text">Contact Us!</p>
+					<form onsubmit="return sendMail(this);" method="POST">
+						<input type="text" name="fname" id="fname" class="form-control" placeholder="First Name" required>
+                        <input type="text" name="lname" id="lname" class="form-control" placeholder="Last Name" required>
+						<input type="email" name="emailaddress" id="emailaddress" class="form-control" placeholder="Email Address" required>
+                        <input type="text" name="contactno" id="contactno" class="form-control" placeholder="+XX (0) Contact No." required>
+						<textarea rows="5" name="projectsummary" id="projectsummary" class="form-control" placeholder="Please provide questions or comments" required></textarea>
+						<div class="row text-center">
+							<div class="col">
+								<button type="submit" class="btn btn-secondary">Send Project Request</button>
+							</div>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
