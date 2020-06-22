@@ -4,9 +4,12 @@ function initMap() {
   var bushy = {lat: 51.416531, lng: -0.339817};
   // The map, centered at Bushy Park
   var map = new google.maps.Map(
-      document.getElementById("map"), {zoom: 11, center: bushy});
+      document.getElementById("map"), {zoom: 11, center: bushy, mapTypeId: "terrain"});
   // The marker, positioned at Bushy Park
   var marker = new google.maps.Marker({position: bushy, map: map});
+
+//  var bikeLayer = new google.maps.BicyclingLayer();
+//        bikeLayer.setMap(map);
 
   // Create an array of alphabetical characters used to label the markers.
         var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -22,9 +25,10 @@ function initMap() {
           });
         });
 
-        // Add a marker clusterer to manage the markers.
+// Add a marker clusterer to manage the markers.
         var markerCluster = new MarkerClusterer(map, markers,
             {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+       
       }
 var locations = [
         {lat: 51.446531, lng: -0.359817},
@@ -33,6 +37,7 @@ var locations = [
         {lat: 51.456531, lng: -0.379817}
       ]
 
+// Email send functon strts here----------------->
 function sendMail(contactForm) {
     emailjs.send("gmail", "mtb_tours", {
         "first_name": contactForm.fname.value,
