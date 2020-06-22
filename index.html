@@ -34,7 +34,7 @@
              <div class="col-md-12">
 				<div class="image-box">
 					<p class="general-text">Contact Us!</p>
-					<form onsubmit="return sendMail(this);" method="POST">
+					<form class="form-box" onsubmit="return sendMail(this);" method="POST">
 						<input type="text" name="fname" id="fname" class="form-control" placeholder="First Name" required>
                         <input type="text" name="lname" id="lname" class="form-control" placeholder="Last Name" required>
 						<input type="email" name="emailaddress" id="emailaddress" class="form-control" placeholder="Email Address" required>
@@ -42,11 +42,11 @@
 						<textarea rows="5" name="projectsummary" id="projectsummary" class="form-control" placeholder="Please provide questions or comments" required></textarea>
 						<div class="row text-center">
 							<div class="col">
-								<button type="submit" class="btn btn-secondary">Send Project Request</button>
+								<button type="submit" class="btn btn-secondary" >Send Project Request</button>
 							</div>
 						</div>
 					</form>
-                    <div class="gcse-searchbox-only" data-resultsUrl="search.html"></div>
+                    <div class="gcse-searchbox-only" data-resultsurl="search.html"></div>
 				</div>
 			</div>
 		</div>
@@ -55,6 +55,8 @@
     * The async attribute allows the browser to render the page while the API loads
     * The callback parameter executes the initMap() function
     -->
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclustererplus@4.0.1.min.js">
+    </script>
     <script async src="https://cse.google.com/cse.js?cx=003859545793237736648:4tj2jr_kaoe"></script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCw0HtP4wgQaSiWPmrdKnk2krRgCpUubmk&callback=initMap">

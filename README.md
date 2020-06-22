@@ -10,3 +10,4 @@
 ##### V1.4 Added EmailJS API and Form Box
 ##### V1.5 Added Google Search two page search version
 ##### V1.6 Amended Search to point to Search Url
+##### V1.7 Amended to include MarkerCluster capability on Google Map
