@@ -9,3 +9,4 @@
 ##### V1.3 Added JS file, Bushy Park image and styled boxes
 ##### V1.4 Added EmailJS API and Form Box
 ##### V1.5 Added Google Search two page search version
+##### V1.6 Amended Search to point to Search Url
