@@ -13,3 +13,4 @@
 ##### V1.7 Amended to include MarkerCluster capability on Google Map
 ##### V1.8 Added Google Map Search box
 ##### V1.9 Amended const 'map' to 'mymap' for test
+##### V2.0 Scripted out the google kaoe script for test
