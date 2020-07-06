@@ -3,10 +3,10 @@ function initMap() {
   // The location of Bushy Park
   var bushy = {lat: 51.416531, lng: -0.339817};
   // The map, centered at Bushy Park
-  var map = new google.maps.Map(
-      document.getElementById("map"), {zoom: 11, center: bushy, mapTypeId: "terrain"});
+  var mymap = new google.maps.Map(
+      document.getElementById("mymap"), {zoom: 11, center: bushy, mapTypeId: "roadmap"});
   // The marker, positioned at Bushy Park
-  var marker = new google.maps.Marker({position: bushy, map: map});
+  var marker = new google.maps.Marker({position: bushy, map: mymap});
 
 //  var bikeLayer = new google.maps.BicyclingLayer();
 //        bikeLayer.setMap(map);
@@ -26,7 +26,7 @@ function initMap() {
         });
 
 // Add a marker clusterer to manage the markers.
-        var markerCluster = new MarkerClusterer(map, markers,
+        var markerCluster = new MarkerClusterer(mymap, markers,
             {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
        
       }
